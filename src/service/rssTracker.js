@@ -28,7 +28,7 @@ const rssTracker = async (url) => {
                 transporter.sendMail({
                     from: '"Fred Foo 👻" <foo@example.com>', // sender address
                     to: "bar@example.com, ahmedjamshedlead@gmail.com", // list of receivers
-                    subject: feed.title, // Subject line
+                    subject: currentItem.title, // Subject line
                     text: currentItem.contentSnippet, // plain text body
                     html: currentItem.content, // html body
                   })
