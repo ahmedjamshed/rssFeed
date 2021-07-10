@@ -1,0 +1,40 @@
+{
+  "name": "rss",
+  "version": "7.3.9",
+  "description": "rss test",
+  "main": "./src",
+  "scripts": {
+    "start": "NODE_PATH=./src node ./src",
+    "start:local": "NODE_PATH=./src nodemon ./src",
+    "lint": "eslint --debug ./src",
+    "lint:write": "eslint --debug ./src --fix"
+  },
+  "_moduleAliases": {
+    "@app": "./src"
+  },
+  "author": "Sharjeel",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "email-templates": "^6.1.1",
+    "express": "^5.0.0-alpha.7",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.6.0",
+    "graphql-compose": "^7.14.0",
+    "graphql-playground-middleware-express": "^1.7.18",
+    "graphql-subscriptions": "^1.1.0",
+    "i18next": "^19.0.2",
+    "i18next-express-middleware": "^1.9.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "module-alias": "^2.2.2",
+    "moment": "^2.24.0",
+    "nodemailer": "^6.4.2",
+    "rss-parser": "^3.12.0",
+    "subscriptions-transport-ws": "^0.9.18",
+    "validator": "^12.1.0",
+    "winston": "^3.2.1"
+  }
+}
